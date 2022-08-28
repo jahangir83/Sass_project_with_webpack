@@ -1,0 +1,52 @@
+
+@keyframes moveLeft {
+    0%{
+        opacity: 0;
+        transform: translateX(-100px);
+    }
+    80%{
+        transform: translateX(20px);
+    }
+    100%{
+        opacity: 1;
+        transform: translate(0);
+    }
+}
+@keyframes moveRight {
+    0%{
+        opacity: 0;
+        transform: translateX(100px);
+    }
+    80%{
+        transform: translateX(-20px);
+    }
+    100%{
+        opacity: 1;
+        transform: translate(0);
+    }
+}
+@keyframes moveBottom {
+    0%{
+        opacity: 0;
+        transform: translateY(30px)
+    }
+    100%{
+        opacity: 1;
+        transform: translate(0);
+    }
+}
+@function width1($a , $b){
+    @return $a * $b;
+}
+.jahangir{
+    width: width1(10 , 50) * 1  px ;
+    background: $LightGreen;
+    display: inline-block;
+   
+}
+.alam{
+
+    display: inline-block;
+}
+// TODO: MIXIN
+

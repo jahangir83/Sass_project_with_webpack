@@ -1,0 +1,48 @@
+
+$LightGreen:#7ed56f;
+$MedimGreen: #55c57a;
+$DarkGreen: #28b485;
+
+@import './css/icon-font.css';
+
+// @import "abstracts/functions";
+@import '/src/sass/abstracts/mixins';
+@import "/src/sass/abstracts/variables";
+
+@import "/src/sass/base/animations";
+@import "/src/sass/base/base";
+@import "/src/sass/base/typography";
+@import "/src/sass/base/utilities";   ///src/sass/
+
+// @import "components/bg-video";
+@import "/src/sass/components/button";
+@import "/src/sass/components/card";
+@import "/src/sass/components/composition";
+@import "/src/sass/components/feature";
+// @import "components/form";
+// @import "components/popup";
+// @import "components/story";
+
+@import "/src/sass/layout/footer";
+@import "/src/sass/layout/grid";
+@import "/src/sass/layout/header";
+@import "/src/sass/layout/navigation";
+
+@import "/src/sass/pages/home";
+
+
+
+
+
+
+/*
+    COLORS:
+    Light green: #7ed56f
+*/
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700&display=swap');
+
+
+
+
+
+

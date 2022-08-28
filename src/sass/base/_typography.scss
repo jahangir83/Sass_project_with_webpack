@@ -1,0 +1,81 @@
+
+.header{
+    height: 97vh;
+    background-image: 
+    linear-gradient(
+        to right bottom,
+        rgba(126, 213, 111, 0.5), rgba(40, 180, 131, 0.8),),
+         url('https://www.imgacademy.com/themes/custom/imgacademy/images/helpbox-contact.jpg');
+    background-size:cover;
+    background-position: top;
+    position: relative;
+
+    clip-path: polygon(0 0, 100% 0, 100% 76vh, 0 100%);
+
+    .text-box{
+        position: absolute;
+        top: 40%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        
+        .primary-hading{
+            color: #ffffff;
+            text-transform: uppercase;
+            font-size: 44px;
+             backface-visibility: hidden;
+
+            animation-name: moveLeft;
+            animation-duration: 1s;
+            
+
+            //  animation-delay: 1s;
+            //  animation-iteration-count: 3;
+            //  animation-timing-function: ;
+
+        }
+        .secondary-hading{
+            color: #ffffff;
+            display: block;
+            font-size: 30px;
+            font-weight: 400;
+            letter-spacing: 10px;
+            margin-bottom: 60px;
+
+            animation-name: moveRight;
+            animation-duration: 1s;
+        }
+        
+        
+    }
+}
+
+.heading-secondary{
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    display: inline-block;
+    background-image: linear-gradient(to right , $color-primary,$color-primary-light,$color-primary-dark);
+    -webkit-background-clip: text;
+    color: transparent;
+    &:hover{
+        transform: skew(2deg) skew(5deg) scale(1.1);
+        text-shadow: .5rem 1rem 2rem rgba($color-black, .2);
+    }
+}
+
+.heading-tertiary{
+    font-size: 1,6rem;
+    font-weight: 700;
+    text-transform: uppercase;
+
+}
+.paragraph{
+ font-size: 1.6rem;
+
+ &:not(:last-child) {
+    margin-bottom: 3rem;
+}
+
+}
+
