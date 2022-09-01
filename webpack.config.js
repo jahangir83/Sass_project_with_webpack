@@ -37,10 +37,41 @@ module.exports ={
             {
                 // test: /\.(png| jpeg| jpg|gif|woff|eot|svg)$/,
                 test: /\.(png|jpeg|gif|jpg||eotwoff(2)?|ttf|eot|svg)(\?v=\d+\.\d+\.\d+)?$/,
-                type: 'asset/resource',//This is use When use icon 
+                type: 'asset/resource',//This is use When use icon + photo
                 // use: "asset/resource",  // this is use whenn use photo
 
             },
+            {
+                test: /\.(webm|mp4)$/,
+                use: [
+                    {
+                        loader: "file-loader",
+                        options: {
+                            name: "[name].[ext]",
+                        }
+                    }
+                ]
+            },
+            // {
+            //     test: /\.html$/,
+            //     exclude: /node_modules/,
+            //     use: [
+            //         {
+            //             loader: "html-loader",
+            //             options: {
+            //                 sources: {
+            //                     list: [
+            //                         {
+            //                             tag: "source",
+            //                             attribute: "src",
+            //                             type: "src"
+            //                         }
+            //                     ]
+            //                 }
+            //             }
+            //         }
+            //     ]
+            // }
             // {
             //     test: /\.(woff(2)?|ttf|eot|svg)(\?v=\d+\.\d+\.\d+)?$/,
             //     use: [
@@ -62,5 +93,11 @@ module.exports ={
 
         }),
         new miniCssExPlu({})
-    ]
+    ],
+
+    optimization:{
+        splitChunks:{
+            chunks: 'all'
+        }
+    }
 }

@@ -11,8 +11,29 @@
             
         }   
         .btn-white{
-            background: #fff;
-            color:#000
+            background: $color-white;
+            color:$color-black;
+            font-size: 1.5rem;
+
+            &::after{
+                background-color: $color-white;
+            }
+            
+        }
+        .btn-green{
+            background: $color-primary;
+            color:$color-grey-dark;
+            margin-top: 5rem;
+            padding: 10px;
+            border-radius: 5px;
+            color: $color-white;
+            font-size: 1.5rem;
+            border: none;
+            &::after{
+                background-color: $color-primary;
+                color:$color-white;
+            }
+            
         }
         .btn:hover{
             transform: translateY(-3px);
@@ -64,7 +85,7 @@
         background: $color-primary;
         color: $color-white;
         box-shadow: 0 1rem 2rem rgba($color-black , .15);
-        transform: translateY(-2px);
+        transform: translatex(20px);
     }
     &:active{
         box-shadow: 0 .5rem 1rem rgba($color-black , .15);
